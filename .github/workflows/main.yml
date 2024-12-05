@@ -62,7 +62,7 @@ jobs:
         image: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REPOSITORY1 }}:${{ env.IMAGE_TAG }}@g" back.yml
 
         sed -i "s@ \
-        image: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REPOSITORY1 }}:.*@ \
+        image: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REPOSITORY2 }}:.*@ \
         image: ${{ env.DOCKER_REGISTRY }}/${{ env.DOCKER_REPOSITORY2 }}:${{ env.IMAGE_TAG }}@g" front.yml
         
     - name: Commit and Push
